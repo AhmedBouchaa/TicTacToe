@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Alertfy JS -->
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"
+    />
+  </head>
+  <body>
+    <div id="all-content">
+      <div id="content">
+        <div id="headeretboard">
+          <!-- header -->
+          <div id="header">
+            <h2 id="theheadertext">le tour de <span id="joueur">X</span></h2>
+          </div>
+          <!-- board -->
+          <div id="board">
+            <div
+              id="1"
+              class="carre"
+              style="border-top: none; border-left: none"
+            >
+              <input type="button" id="b1" onclick="tour(1)" />
+            </div>
+
+            <div id="2" class="carre" style="border-top: none">
+              <input type="button" id="b2" onclick="tour(2)" />
+            </div>
+
+            <div
+              id="3"
+              class="carre"
+              style="border-top: none; border-right: none"
+            >
+              <input type="button" id="b3" onclick="tour(3)" />
+            </div>
+
+            <div id="4" class="carre" style="border-left: none">
+              <input type="button" id="b4" onclick="tour(4)" />
+            </div>
+
+            <div id="5" class="carre">
+              <input type="button" id="b5" onclick="tour(5)" />
+            </div>
+
+            <div id="6" class="carre" style="border-right: none">
+              <input type="button" id="b6" onclick="tour(6)" />
+            </div>
+
+            <div
+              id="7"
+              class="carre"
+              style="border-bottom: none; border-left: none"
+            >
+              <input type="button" id="b7" onclick="tour(7)" />
+            </div>
+
+            <div id="8" class="carre" style="border-bottom: none">
+              <input type="button" id="b8" onclick="tour(8)" />
+            </div>
+
+            <div
+              id="9"
+              class="carre"
+              style="border-bottom: none; border-right: none"
+            >
+              <input type="button" id="b9" onclick="tour(9)" />
+            </div>
+          </div>
+        </div>
+        <div id="footer">
+          <button class="bottons" onclick="rejouer()">Rejouer</button>
+        </div>
+      </div>
+    </div>
+    <script src="logic.js"></script>
+  </body>
+</html>
